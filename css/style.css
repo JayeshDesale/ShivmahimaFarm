@@ -307,7 +307,7 @@ select {
   padding: 6.5rem 0 5rem;
   background:
     linear-gradient(90deg, rgba(239, 248, 234, 0.96), rgba(255, 255, 255, 0.84)),
-    url("blog1.jpg") center / cover;
+    url("../assets/images/blog1.jpg") center / cover;
 }
 
 .blog-hero .container {
@@ -340,7 +340,7 @@ select {
   background:
     linear-gradient(120deg, rgba(239, 248, 234, 0.8), rgba(255, 255, 255, 0.58)),
     linear-gradient(90deg, rgba(185, 220, 162, 0.72), rgba(246, 236, 184, 0.32)),
-    url("home3.jpg") center / cover;
+    url("../assets/images/home3.jpg") center / cover;
 }
 
 .story-section::before,
@@ -363,7 +363,7 @@ select {
   background:
     linear-gradient(120deg, rgba(255, 253, 242, 0.94), rgba(237, 247, 231, 0.9)),
     linear-gradient(90deg, rgba(246, 236, 184, 0.55), rgba(185, 220, 162, 0.42)),
-    url("home2.jpg") center / cover;
+    url("../assets/images/home2.jpg") center / cover;
   color: #111;
 }
 
