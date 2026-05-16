@@ -26,3 +26,55 @@ if (slider) {
     showSlide(nextIndex);
   }, 2000);
 }
+
+const helpForm = document.querySelector("#help-form");
+
+if (helpForm) {
+  helpForm.addEventListener("submit", async (event) => {
+    event.preventDefault();
+
+    const apiUrl = helpForm.dataset.apiUrl;
+    const submitButton = helpForm.querySelector('button[type="submit"]');
+
+    if (!apiUrl) {
+      alert("Form backend is not connected yet. Add the Render API URL in contact.html.");
+      return;
+    }
+
+    const formData = new FormData(helpForm);
+    const payload = {
+      name: formData.get("name"),
+      phone: formData.get("phone"),
+      village: formData.get("village"),
+      crop: formData.get("crop"),
+      issueType: formData.get("issue-type"),
+      stage: formData.get("stage"),
+      message: formData.get("message"),
+    };
+
+    submitButton.disabled = true;
+    submitButton.textContent = "Sending...";
+
+    try {
+      const response = await fetch(apiUrl, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(payload),
+      });
+
+      if (!response.ok) {
+        throw new Error("Request failed");
+      }
+
+      helpForm.reset();
+      alert("Inquiry sent successfully.");
+    } catch (error) {
+      alert("Could not send inquiry. Please try again.");
+    } finally {
+      submitButton.disabled = false;
+      submitButton.textContent = "Send Inquiry";
+    }
+  });
+}
