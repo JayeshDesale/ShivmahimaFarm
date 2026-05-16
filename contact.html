@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shiv Mahima Farm | Contact</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-shell">
+      <a class="brand" href="index.html">
+        <span class="brand-kicker">Shiv Mahima Farm</span>
+        <span class="brand-title">Fresh from our farm</span>
+      </a>
+      <nav class="site-nav" aria-label="Primary navigation">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="blog.html">Blogs</a>
+        <a href="news.html">Updates</a>
+        <a class="active" href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="page-main">
+    <section class="page-hero">
+      <div class="container">
+        <p class="eyebrow">Contact and support</p>
+        <h1>Reach us. Ask us. Share your crop issue.</h1>
+        <p class="page-intro">Simple contact for visitors and farmers.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container contact-layout">
+        <div class="contact-panel reveal-card">
+          <h2>Contact details</h2>
+          <p>Call or message us anytime.</p>
+          <div class="contact-chip-group contact-chip-group-vertical">
+            <span class="contact-chip">Farm: Shivmahima Farm</span>
+            <span class="contact-chip">Address: P6JQ+J7 Gorane, Maharashtra</span>
+            <span class="contact-chip">Phone: +91 99235 19754</span>
+            <span class="contact-chip">Email: info@shivmahimafarm.com</span>
+          </div>
+          <div class="map-frame compact-map">
+            <iframe
+              title="Map showing Shivmahima Farm in Gorane, Maharashtra"
+              src="https://www.google.com/maps?q=P6JQ%2BJ7%20Gorane%2C%20Maharashtra&output=embed"
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+        </div>
+
+        <form class="support-form reveal-card" id="help-form">
+          <h2>Crop help form</h2>
+          <p class="form-note">Share your crop problem in simple words.</p>
+
+          <label for="name">Full name</label>
+          <input id="name" name="name" type="text" placeholder="Enter your name" required>
+
+          <label for="phone">Phone number</label>
+          <input id="phone" name="phone" type="tel" placeholder="Enter your phone number" required>
+
+          <label for="village">Village or location</label>
+          <input id="village" name="village" type="text" placeholder="Village, taluka or district">
+
+          <label for="crop">Crop name / variety</label>
+          <input id="crop" name="crop" type="text" placeholder="Example: grapes, black brinjal, cucumber" required>
+
+          <label for="issue-type">Issue</label>
+          <select id="issue-type" name="issue-type" required>
+            <option value="">Select the problem</option>
+            <option>Pest attack</option>
+            <option>Disease symptoms</option>
+            <option>Virus suspicion</option>
+            <option>Pesticide doubt</option>
+            <option>Variety enquiry</option>
+            <option>General crop guidance</option>
+          </select>
+
+          <label for="stage">Stage</label>
+          <input id="stage" name="stage" type="text" placeholder="Example: flowering, fruiting, harvest stage">
+
+          <label for="message">Problem details</label>
+          <textarea id="message" name="message" rows="6" placeholder="Write what you see in the crop." required></textarea>
+
+          <label for="photo">Upload crop image</label>
+          <input id="photo" name="photo" type="file" accept="image/*">
+
+          <button class="button button-primary" type="submit">Send Inquiry</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-shell">
+      <div>
+        <p class="footer-title">Shiv Mahima Farm</p>
+        <p>Fresh crops. Simple support.</p>
+      </div>
+      <div class="footer-links">
+        <a href="about.html">About</a>
+        <a href="blog.html">Blogs</a>
+        <a href="news.html">Updates</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
